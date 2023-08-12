@@ -29,85 +29,47 @@ body {
 header {
   width: 100%;
   height: 600px;
-  background: #2193b0; /* fallback for old browsers */
+  background: #bc4e9c; /* fallback for old browsers */
   background: -webkit-linear-gradient(
       to right,
-      hsla(0, 78%, 68%, 0.603),
-      hsla(0, 68%, 41%, 0.966)
-    ),
-    url(../imagenes/fondo_pantalla.jpg); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-      to right,
-      hsla(0, 78%, 68%, 0.603),
-      hsla(0, 68%, 41%, 0.966)
-    ),
-    url(../imagenes/fondo_pantalla.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background-size: cover;
-  background-attachment: fixed;
-  position: relative;
+      hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url(../imagenes/fondo_pantalla.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url(../imagenes/fondo_pantalla.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
 }
-/* para darle movimiento a una frase
-.header-text span {
-  opacity: 0;
-  animation: fall 1.5s forwards;
-}
-
-@keyframes fall {
-  0% {
-    opacity: 0;
-    transform: translateY(-100px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-*/
-.barra_nav {/*barra vertical flotante*/
-  background-color: rgb(211, 208, 208, 0.5);
+.barra_nav {
+  background-color: rgba(211, 208, 208, 0.5);
   border-radius: 30px;
   position: fixed;
   top: 10px;
-  right: 40px;
   width: auto;
-  height: auto;  
-  z-index: 999; /* Ajusta el valor de z-index según tus necesidades */
+  height: auto;
+  z-index: 999;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end; /* Alinea el contenido al final del contenedor (derecha) */
-  padding: 30px 0px 0px 25px;
+  justify-content: flex-end;
+  padding: 15px 15px 15px 15px;
+  right: 2%;
 }
+
+
 
 nav > a {
-  color: #142b29;
+  color: #0c0b0b;
   font-weight: bold;
   text-decoration: none;
-  padding: 0px 0px 20px 0px;
-  display: inline-block;
-  align-items: center;
-  flex-direction: row; /* Alinea los elementos en una fila */
+  margin-right: 10px;  
 }
 
-nav > a i {
-  opacity: 1;
-  transition: opacity 0.5s ease-in-out;
-  font-size: 24px;
-  margin: 0px;   
-  order: 2; /* Cambia el orden del icono */
+nav > a:hover{
+  text-decoration: underline;
+  color: aliceblue;
 }
 
-nav > a span {
-  opacity: 0;
-  margin-left: 10px;
-  transition: opacity 0.3s ease-in-out;
-}
-
-nav > a:hover span {
-  opacity: 1;
-  text-decoration: none;
-  font-weight: bold;
-}
 
 header .textos-header {
   display: flex;
@@ -118,10 +80,17 @@ header .textos-header {
   transform: translate(65%, 35%);
 }
 
-
 .textos-header h1 {
-  font-size: 40px;
+  font-size: 70px;
   color: white;
+}
+
+.textos-header h1:hover {
+  position: absolute;
+  top: 101px;
+  left: 6010px;
+  font-size: 71px;
+  color: rgb(33, 7, 7);
 }
 
 .textos-header h2 {
@@ -135,7 +104,6 @@ header .textos-header {
   bottom: 0;
   width: 100%;
 }
-
 /*About us*/
 
 main .sobre-nosotros {
@@ -348,11 +316,11 @@ footer {
     background-position: center;
   }
   .textos-header h1 {
-    font-size: 35px;
+    font-size: 60px;
   }
 
   .textos-header h2 {
-    font-size: 20px;
+    font-size: 30px;
   }
   .contenedor-sobre-nosotros {
     flex-direction: column;
@@ -423,7 +391,7 @@ footer {
   }
 
   .textos-header h1 {
-    font-size: 24px;
+    font-size: 35px;
   }
 
   .textos-header h2 {
